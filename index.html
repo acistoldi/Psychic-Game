@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Psychic Game</title>
+</head>
+
+
+<body>
+     <h1>The Psychic Game</h1>
+    
+
+     <script type="text/javascript">
+   //Variables
+        var computerchoice = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+        var wins = 0;
+        var losses = 0;
+        
+        document.write("Guess what letter I'm thinking of");
+        document.onkeyup = function(event) {
+            var guesses = event.key;
+            var computerchoice = computerchoice[Math.floor(Math.random() * computerchoice.length)];
+        }
+       
+        if (guess === computerchoice){
+                wins++;
+
+            else losses++;
+                document.getElementById("wins").textContent = str;
+                
+        }
+
+
+        
+        
+        //declare variables wins, losses, left,guesses
+        //computer picks a letter
+        //read in the typed in key
+        //compare the letters
+        //If the letters are the same increment wins 
+        //else inclreases losses
+        //reset the game afte a win or loss
+        //list the guessed letters "your guesses so far"
+        //clear guessed letter unit ther's a win or loss
+        //decrament guesses left
+
+
+</body>
+
+</html>
